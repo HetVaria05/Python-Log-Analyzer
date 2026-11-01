@@ -1,0 +1,73 @@
+# Python Log Analyzer — Sample Log File
+# This file contains realistic server log entries for demonstration.
+# Format: YYYY-MM-DD HH:MM:SS LEVEL message
+
+2024-07-01 08:00:01 INFO Server started on port 8080
+2024-07-01 08:00:02 INFO Configuration loaded from /etc/app/config.yaml
+2024-07-01 08:00:05 INFO Database connection established (pool size: 10)
+2024-07-01 08:01:12 INFO User login successful from 192.168.1.100
+2024-07-01 08:02:33 INFO GET /api/users returned 200 in 45ms
+2024-07-01 08:03:10 WARNING Disk usage at 78% on /dev/sda1
+2024-07-01 08:04:45 INFO User login successful from 10.0.0.25
+2024-07-01 08:05:22 INFO POST /api/orders returned 201 in 120ms
+2024-07-01 08:06:00 ERROR Database query timeout after 30s — query: SELECT * FROM orders WHERE status='pending'
+2024-07-01 08:07:15 INFO Retry succeeded for database query
+2024-07-01 08:10:30 WARNING Memory usage at 82%
+2024-07-01 08:12:00 INFO GET /api/products returned 200 in 30ms
+2024-07-01 08:15:00 ERROR Failed login attempt from 203.0.113.50 — invalid credentials
+2024-07-01 08:15:30 ERROR Failed login attempt from 203.0.113.50 — invalid credentials
+2024-07-01 08:16:00 ERROR Failed login attempt from 203.0.113.50 — invalid credentials
+2024-07-01 08:16:30 ERROR Failed login attempt from 203.0.113.50 — invalid credentials
+2024-07-01 08:17:00 ERROR Failed login attempt from 203.0.113.50 — invalid credentials
+2024-07-01 08:17:30 ERROR Failed login attempt from 203.0.113.50 — invalid credentials
+2024-07-01 08:18:00 INFO User login successful from 192.168.1.100
+2024-07-01 08:20:00 INFO Scheduled backup started
+2024-07-01 08:25:00 INFO Backup completed successfully (2.3 GB)
+2024-07-01 08:30:00 WARNING SSL certificate for api.example.com expires in 14 days
+2024-07-01 08:35:00 INFO GET /api/dashboard returned 200 in 55ms
+2024-07-01 08:40:00 ERROR Connection refused to payment gateway at 198.51.100.20
+2024-07-01 08:41:00 ERROR Retry 1/3 failed — payment gateway at 198.51.100.20 unreachable
+2024-07-01 08:42:00 WARNING Payment processing delayed — queuing 12 transactions
+2024-07-01 08:45:00 INFO Payment gateway connection restored
+2024-07-01 08:50:00 INFO User login successful from 10.0.0.25
+2024-07-01 09:00:00 INFO Hourly health check — all services operational
+2024-07-01 09:05:00 ERROR Failed authentication from 198.51.100.77 — account locked
+2024-07-01 09:06:00 ERROR Failed login attempt from 198.51.100.77 — invalid password
+2024-07-01 09:07:00 ERROR Failed login attempt from 198.51.100.77 — invalid password
+2024-07-01 09:08:00 ERROR Failed authentication from 198.51.100.77 — brute force suspected
+2024-07-01 09:09:00 ERROR Failed login attempt from 198.51.100.77 — invalid credentials
+2024-07-01 09:10:00 ERROR Failed login attempt from 198.51.100.77 — invalid credentials
+2024-07-01 09:15:00 INFO GET /api/reports returned 200 in 90ms
+2024-07-01 09:20:00 CRITICAL Out of memory — process killed (PID 4521)
+2024-07-01 09:21:00 CRITICAL Service restart initiated by watchdog
+2024-07-01 09:22:00 INFO Server restarted successfully on port 8080
+2024-07-01 09:25:00 WARNING API rate limit exceeded for client 10.0.0.50 — throttling applied
+2024-07-01 09:30:00 INFO User login successful from 172.16.0.5
+2024-07-01 09:35:00 INFO PUT /api/users/42 returned 200 in 75ms
+2024-07-01 09:40:00 ERROR Unhandled exception in /api/checkout — NullPointerException
+2024-07-01 09:45:00 INFO Error report sent to monitoring service
+2024-07-01 09:50:00 WARNING Slow query detected (2.5s) — SELECT * FROM analytics
+2024-07-01 09:55:00 INFO Cache cleared — 1,204 entries evicted
+2024-07-01 10:00:00 INFO Hourly health check — all services operational
+2024-07-02 08:00:00 INFO Server started on port 8080
+2024-07-02 08:05:00 INFO User login successful from 192.168.1.100
+2024-07-02 08:10:00 ERROR Failed login attempt from 203.0.113.50 — invalid credentials
+2024-07-02 08:11:00 ERROR Failed login attempt from 203.0.113.50 — invalid credentials
+2024-07-02 08:15:00 WARNING Disk usage at 85% on /dev/sda1
+2024-07-02 08:20:00 INFO GET /api/users returned 200 in 40ms
+2024-07-02 08:30:00 ERROR Failed login attempt from 10.0.0.99 — invalid credentials
+2024-07-02 08:35:00 ERROR Failed login attempt from 10.0.0.99 — invalid credentials
+2024-07-02 08:40:00 ERROR Failed login attempt from 10.0.0.99 — invalid credentials
+2024-07-02 08:45:00 INFO User login successful from 10.0.0.25
+2024-07-02 09:00:00 CRITICAL Database connection pool exhausted — 0 available connections
+2024-07-02 09:01:00 ERROR All incoming requests failing with 503
+2024-07-02 09:02:00 CRITICAL Emergency: initiating failover to secondary database
+2024-07-02 09:05:00 INFO Failover complete — secondary database online
+2024-07-02 09:10:00 INFO Normal operation resumed
+2024-07-02 09:15:00 WARNING API response time degraded (avg 800ms, threshold 500ms)
+2024-07-02 09:20:00 INFO GET /api/products returned 200 in 35ms
+2024-07-02 09:30:00 INFO User login successful from 172.16.0.5
+2024-07-02 09:40:00 ERROR Failed login attempt from 10.0.0.99 — invalid credentials
+2024-07-02 09:45:00 ERROR Failed login attempt from 10.0.0.99 — invalid credentials
+2024-07-02 09:50:00 ERROR Failed authentication from 10.0.0.99 — account locked
+2024-07-02 10:00:00 INFO Hourly health check — all services operational
